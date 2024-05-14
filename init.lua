@@ -245,7 +245,13 @@ require('lazy').setup({
       }, { mode = 'v' })
     end,
   },
-
+  
+  -- You can jump between hunks with [c and ]c. You can preview, stage, and undo hunks with <leader>hp, <leader>hs, and <leader>hu respectively.
+  
+  --         With Neovim 0.3.2 or higher, you can turn line number highlighting on and off (defaults to off):
+  -- turn on with :GitGutterLineNrHighlightsEnable
+  -- turn off with :GitGutterLineNrHighlightsDisable
+  -- toggle with :GitGutterLineNrHighlightsToggle.
   { 'airblade/vim-gitgutter', requires = 'tpope/vim-fugitive' },
 
   -- NOTE: Plugins can specify dependencies.
